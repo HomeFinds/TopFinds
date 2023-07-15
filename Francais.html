@@ -6,34 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="Styling2.css">
 <link rel="stylesheet" href="Styling.css">
-<style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-    .w3-bar-block .w3-bar-item {padding:20px}
-</style>
 </head>
 
-<!-- Sidebar (hidden by default) 
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:150px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>Menu</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-    <a href="#kitchen" onclick="w3_close()" class="w3-bar-item w3-button">Kitchen Finds</a>
-    <a href="#bedroom" onclick="w3_close()" class="w3-bar-item w3-button">Bedroom Finds</a>
-  </div>
-  <a href="#followMe" class="w3-bar-item w3-button w3-padding">Follow Me</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a>
-</nav>
--->
 
-<!-- Old Sidebar (hidden by default)-->
+<!-- Sidebar (hidden by default)-->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:30%;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button"><b>Fermer &emsp; &#10006;</b></a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">À propos</a>
   <a href="#kitchen" onclick="w3_close()" class="w3-bar-item w3-button">Cuisine</a>
+  <!--<a href="#livingRoom" onclick="w3_close()" class="w3-bar-item w3-button">Living room</a> -->
   <a href="#bedroom" onclick="w3_close()" class="w3-bar-item w3-button">Chambre à coucher</a>
   <a href="#contactUs" onclick="w3_close()" class="w3-bar-item w3-button">Nous contacter</a>
   <a href="#followUs" onclick="w3_close()" class="w3-bar-item w3-button">Médias sociaux</a>
@@ -43,233 +24,170 @@
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:100%;margin:auto;height: 50px;">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">
+      ☰
+    </div>
     <a href="English.html" class="w3-right w3-padding-16" style="margin-right: 10%;">English</a>
-    <div class="w3-center w3-padding-16"></div>
   </div>
 </div>
 
+
 <!-- !PAGE CONTENT! -->
- <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center" style="pointer-events: none;">  
     <hr id="about">
-    <h3>À propos de nous</h3>
-    <img src="Images/Home2.jpeg" alt="Home" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <h2>À propos de nous</h2>
+    <img src="Images/Home2.jpeg" alt="Home" class="w3-image" style="display:block;margin:auto;" width="800" height="533">
     <div class="w3-padding-32">
       <h4><b>Meilleures découvertes sur Amazon!</b></h4>
-      <p style="margin-left: 20%;margin-right: 20%; text-align: center;">Bienvenue sur notre site web où vous pouvez découvrir les articles parfaits qui correspondent à vos besoins et préférences. Cliquez sur n'importe quel produit et nous vous redirigerons en toute transparence vers Amazon, où vous pourrez profiter de la commodité, de la sécurité, de la vaste gamme de produits et bien plus encore.</p>
+      <p style="margin:auto; text-align: center;">Bienvenue sur notre site web où vous pouvez découvrir les articles parfaits qui correspondent à vos besoins et préférences. Cliquez sur n'importe quel produit et nous vous redirigerons en toute transparence vers Amazon, où vous pourrez profiter de la commodité, de la sécurité, de la vaste gamme de produits et bien plus encore.</p>
     </div>
   </div>
 
   <!--KITCHEN FINDS-->
-  <div class="w3-main w3-content w3-padding" style="max-width:100%;margin-top:100px;margin-left:5%">
-    <!-- First Photo Grid-->
-    <div class="w3-row-padding w3-padding-16 w3-center">
-      <div class="w3-white w3-xxlarge" style="margin:auto" id="kitchen">Articles de cuisine</div><hr>
-      <!-- 1 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/AirFryer1.jpg" alt="Air Fryer" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/AirFryer2.jpg" alt="Air Fryer" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/dp/B08GL1XSH8/?coliid=I1XDJAZKXC5LA&amp;colid=2TQXU3UZ3JEDJ&amp;ref_=list_c_wl_lv_ov_lig_dp_it&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=c8cb06f411b16c91a760f0bf42b64898&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>NinjaFoodi 2 paniers indépendants 6-en-1 8-Qt</h3>
-        <p>La première friteuse à air comprimé avec 2 paniers indépendants qui vous permettent de cuire 2 aliments, 2 façons, en même temps, pas dos à dos comme une friteuse traditionnelle à panier unique.</p>
+  <div class="w3-padding" >
+    <div class=" w3-xxlarge" style="margin:auto;text-align: center;" id="kitchen">
+      Articles Cuisine</p>
+    </div><hr>
+    <!-- 1 & 2 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/Kettle.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3rt0WU5','_blank')">
+        <h4>COSORI Bouilloire électrique 1.7L</h4>
       </div>
-      <!-- 2 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/chopper1.jpg" alt="Vegetable Chopper" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/chopper2.jpg" alt="Vegetable Chopper" style="width:250px;height:250px;margin-left:15%;margin-top:7%"" onclick="window.open('https://www.amazon.ca/Vegetable-Chopper-Spiralizer-Slicer-Choppers/dp/B0764HS4SL/ref=pd_bxgy_img_sccl_2/132-3809880-0862166?pd_rd_w=dJjPF&amp;content-id=amzn1.sym.93ae3f3f-3555-4971-a952-df8053b1d375&amp;pf_rd_p=93ae3f3f-3555-4971-a952-df8053b1d375&amp;pf_rd_r=0HXSP9ZG5SMR5CGD7F2P&amp;pd_rd_wg=N5X8M&amp;pd_rd_r=129c0d2c-01f2-43a2-8298-44a525567f39&amp;pd_rd_i=B0764HS4SL&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=9ecf412143486220a7a5a77126c5de08&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>4-en-1 Coupe-légumes en spirale</h3>
-        <p>4 lames interchangeables vous permettent de découper en julienne, hacher et trancher les légumes en toute simplicité. Le couvercle à découper intégré vous permet de couper les aliments directement dans le plateau.</p>
-      </div>
-      <!-- 3 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/cooking1.jpg" alt="Cooking Utensils" style="width:250px;height:250px;margin-left:15%;margin-top:7%"">
-          <div class="overlay">
-            <img src="Images/Kitchen/cooking2.jpg" alt="Cooking Utensils" style="width:250px;height:250px;margin-left:15%;margin-top:7%"" onclick="window.open('https://www.amazon.ca/dp/B09HQTYXPG/?coliid=I16Y3VNMD184JK&amp;colid=2TQXU3UZ3JEDJ&amp;psc=1&amp;ref_=list_c_wl_lv_ov_lig_dp_it&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=7be99eebd4e9442e0599e32ed995c6a2&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Lot de 38 ustensiles de cuisine en silicone</h3>
-        <p>Fabriqué en acier inoxydable de haute qualité, les bords sont lisses et élégants, poli miroir, cet ensemble d'ustensiles n'est pas comme certaines d'autres marques bon marché qui ont des bords tranchants qui pourraient couper votre main.</p>
-      </div>
-      <!-- 4 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/DryingRack1.jpg" alt="Drying Rack" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/DryingRack2.jpg" alt="Drying Rack" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/dp/B0BNHCJBQH/?coliid=I1L1GV14Z1VEO3&amp;colid=2TQXU3UZ3JEDJ&amp;psc=1&amp;ref_=list_c_wl_lv_ov_lig_dp_it_im&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=dbe0521d8014c5b7846922a335842ae5&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Égouttoir à vaisselle extensible pour comptoir de cuisine</h3>
-        <p>Égouttoir à vaisselle extensible : il mesure 35,6 cm de large x 7,6 cm de haut et peut s'étendre de 29,9 cm à 50,8 cm de long, offrant suffisamment d'espace pour toutes vos assiettes, bols et couverts.</p>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/coffeMachine.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/46RvNtu','_blank')">
+        <h4>Machine à espresso automatique</h4>
       </div>
     </div>
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding w3-padding-16 w3-center">
-     <!-- 5 -->
-     <div class="w3-quarter">
-       <div class="container">
-        <img src="Images/Kitchen/JarOpener1.jpg" alt="Cutlery Set" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/JarOpener2.jpg" alt="Cutlery Set" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Function-YQMYXG-Ergonomic-Multifunctional-Matching/dp/B08FR6S2XY/ref=sxin_18_hqpsnlp_0_0?content-id=amzn1.sym.5a4bc11d-7da6-4dce-9635-0805fe1320e6%253Aamzn1.sym.5a4bc11d-7da6-4dce-9635-0805fe1320e6&amp;crid=1TT523V6693AE&amp;cv_ct_cx=jar%252Bopener&amp;keywords=jar%252Bopener&amp;pd_rd_i=B08FR6S2XY&amp;pd_rd_r=9d6a2877-70d6-495d-af3b-5e30e8e081e6&amp;pd_rd_w=h1DvH&amp;pd_rd_wg=otktI&amp;pf_rd_p=5a4bc11d-7da6-4dce-9635-0805fe1320e6&amp;pf_rd_r=KYEWZJ30EW16GCJTNC0N&amp;qid=1688967834&amp;s=kitchen&amp;sbo=RZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D&amp;sprefix=jar%252Bopener%252Ckitchen%252C79&amp;sr=1-1-31a6564d-fe8e-4e89-8ad3-c3004b9ef495&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=f35ecf801e5782e4656ced8a309889ab&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Lot de 2 décapsuleurs multifonctions 5 en 1</h3>
-        <p>Fabriqué en caoutchouc de silicone de qualité professionnelle renforcé sans BPA et matériaux PP, il a une excellente résistance à la rupture et est facile à utiliser.</p>
+    <!-- 3 & 4 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/blender2.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/44hHmbT','_blank')">
+        <h4>Ninja Mélangeur professionnel</h4>
       </div>
-      <!-- 6 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/RackOrganizer1.jpg" alt="Spice Organizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/RackOrganizer2.jpg" alt="Spice Organizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/dp/B095W7GGBX/?coliid=I2QRF34DUXILPP&amp;colid=2TQXU3UZ3JEDJ&amp;psc=1&amp;ref_=list_c_wl_lv_ov_lig_dp_it_im&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=3763081e755861c84e789b51a729e7cc&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>SpaceAid Étagère à épices avec 28 pots à épices</h3>
-        <p>Un ensemble complet d'outils à épices : 1 étagère à épices à 4 niveaux, 28 pots à épices carrés vides en verre, 386 étiquettes à épices, 1 entonnoir en silicone pliable, 1 marqueur à craie.</p>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/container.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/44qCP78','_blank')">
+        <h4>32 boîtes avec couvercles</h4>
       </div>
-      <!-- 7 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/strainer1.jpg" alt="Strainer" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/strainer2.jpg" alt="Strainer" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Kitchen-Gizmo-Snap-Strain-Strainer/dp/B081FGJHC9/ref=sr_1_8?crid=20VQ6D63NKFWQ&amp;keywords=food+strainer&amp;qid=1688968016&amp;s=kitchen&amp;sprefix=food+strainer%252Ckitchen%252C76&amp;sr=1-8&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=02fbef17260d906ada14776b5824fa60&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Original Kitchen Gizmo Passoire pour casseroles</h3>
-        <p>Fabricant d'origine : ne craquez pas pour le design et la qualité des produits d'imitation. Seul le vendeur Home N' Goods porte l'original Snap n' Strain conçu et fabriqué par Kitchen Gizmo.</p>
+    </div>
+    <!-- 5 & 6 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;" >
+        <img src="Images/Kitchen/RackOrganizer1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3NVKByQ','_blank')">
+        <h4>Étagère à épices avec 28 pots</h4>
       </div>
-      <!-- 8 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Kitchen/TowelHolder1.jpg" alt="Adhesive Towel Holder" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Kitchen/TowelHolder2.jpg" alt="Adhesive Towel Holder" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Paper-Towel-Holder-Kitchen-Cabinet/dp/B0928MXJ3Y/ref=sr_1_7?crid=ID1H76ZQ33LA&amp;keywords=kitchen&amp;qid=1688968669&amp;sprefix=kitchen%252Caps%252C89&amp;sr=8-7&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=eebb97572a6e188d70538d534d44fc50&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Porte-serviettes en papier sous l'armoire</h3>
-        <p>Le porte-serviettes en papier est fabriqué en acier inoxydable de haute qualité SUS304. Il est solide, durable, étanche, et est fait de matériaux anti-rouille et anti-rayures.</p>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/AirFryer1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/43sH7JU','_blank')">
+        <h4>Friteuse à air avec 2 paniers</h4>
+      </div>
+    </div>
+    <!-- 7 & 8 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/DryingRack1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3rxRdf0','_blank')">
+        <h4>Égouttoir à vaisselle extensible</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/cooking1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/44rkTsV','_blank')">
+        <h4>38 ustensiles de cuisine en silicone</h4>
+      </div>
+    </div>
+    <!-- 9 & 10 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/JarOpener2.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/43tNpsF','_blank')">
+        <h4>Lot de 2 décapsuleurs multifonctions 5 en 1</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/chopper1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/43rasUT','_blank')">
+        <h4>Coupe-légumes 4 en 1</h4>
+      </div>
+    </div>
+    <!-- 11 & 12 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/strainer1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/44KtJSh','_blank')">
+        <h4>Passoire originale Kitchen Gizmo</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/TowelHolder1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/46S5Fic','_blank')">
+        <h4>Auto-adhésif porte-serviettes</h4>
       </div>
     </div>
   </div>
 
   <!--BEDROOM FINDS-->
-  <div class="w3-main w3-content w3-padding" style="max-width:100%;margin-top:100px;margin-left: 100px">
-    <!-- First Photo Grid-->
-    <div class="w3-row-padding w3-padding-16 w3-center">
-      <div class="w3-white w3-xxlarge" style="margin:auto" id="bedroom">Articles chambre à coucher</div><hr>
-      <!-- 1 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/mirror1.jpg" alt="Mirror" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/mirror2.jpg" alt="Mirror" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/dp/B07QXZLTGG/?coliid=I26RRRZB5XQCR&amp;colid=2TQXU3UZ3JEDJ&amp;psc=1&amp;ref_=list_c_wl_lv_ov_lig_dp_it&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=2bfbdc15921e0c6049bf3617851ea8c4&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Armoire blanc à bijoux sur pied avec miroir</h3>
-        <p>Le miroir offre une vision complète de votre apparence avec un accès facile à vos bijoux, accessoires et cosmétiques. Elle comprend des emplacements pour les boucles d'oreilles, des crochets pour les colliers, des crochets pour les bracelets et bien plus encore.</p>
+  <div class="w3-padding w3-row-padding ">
+    <div class="w3-white w3-xxlarge" style="margin-top:100px;text-align: center;" id="bedroom">
+      Articles Chambre à coucher</p>
+    </div><hr>
+    <!-- 1 & 2 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/mirror1.jpg" style="width:125px;height:125px;;margin-top:15%" onclick="window.open('https://amzn.to/3pO41h2','_blank')">
+        <h4>Miroir blanc avec armoire à bijoux</h4>
       </div>
-      <!-- 2 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/ShoeOrg1.jpg" alt="Shoe Organizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/ShoeOrg2.jpg" alt="Shoe Organizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/24-Pockets-SimpleHouseware-Crystal-Organizer/dp/B01D58DRVC?pd_rd_w=ivYVZ&amp;content-id=amzn1.sym.692b7330-b0b8-46a6-a467-efe1241a0906&amp;pf_rd_p=692b7330-b0b8-46a6-a467-efe1241a0906&amp;pf_rd_r=Q8WHQ6GPEECJHXE5XX0S&amp;pd_rd_wg=kRKId&amp;pd_rd_r=9fa7ebff-784b-4065-b0f4-2ee0e722b152&amp;pd_rd_i=B01D58DRVC&amp;psc=1&amp;ref_=pd_bap_d_grid_rp_0_1_ec_i&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=2128ba802b3c2a14387692f93d6f83c1&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Organiseur de chaussures à suspendre à la porte</h3>
-        <p>Il contient 24 poches transparentes et se suspend à une porte standard ou à une tringle de placard. Protège les chaussures ou les objets de la poussière et des dommages. Idéal pour organiser les chaussures, les jouets pour enfants, les accessoires de beauté et d'autres articles dans votre chambre.</p>
-      </div>
-      <!-- 3 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/Hanger1.jpg" alt="Hanger" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/Hanger2.jpg" alt="Hanger" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Premium-Velvet-Suit-Hangers-Utopia/dp/B01G3WS3PW?pd_rd_w=ivYVZ&amp;content-id=amzn1.sym.692b7330-b0b8-46a6-a467-efe1241a0906&amp;pf_rd_p=692b7330-b0b8-46a6-a467-efe1241a0906&amp;pf_rd_r=Q8WHQ6GPEECJHXE5XX0S&amp;pd_rd_wg=kRKId&amp;pd_rd_r=9fa7ebff-784b-4065-b0f4-2ee0e722b152&amp;pd_rd_i=B01G3WS3PW&amp;psc=1&amp;ref_=pd_bap_d_grid_rp_0_14_t&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=3628104085bcf4deaebae270106ec7ed&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Lot de 50 cintres en velours antidérapant</h3>
-        <p>Lot de 50 cintres en velours de qualité supérieur mesurant 44,5 x 0,6 x 23 cm chacun; rotation à 360 degrés assez solide pour supporter 4,5 kg. Construction ultra-fine assez robuste pour contenir vos manteaux et pantalons.</p>
-      </div>
-      <!-- 4 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/connector1.jpg" alt="Hanger Connector" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/connector2.jpg" alt="Hanger Connector" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Mlici-Clothes-Connector-Cascading-Connection/dp/B085XXLQ3K/ref=sr_1_3?crid=Z7MO6RAID0UF&amp;keywords=hanger+connector&amp;qid=1688967501&amp;refinements=p_72%253A11192170011&amp;rnid=11192166011&amp;s=kitchen&amp;sprefix=hanger+connector%252Ckitchen%252C74&amp;sr=1-3&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=19f031b08014659f4229c5184e49c159&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>70 crochets en plastique robuste pour cintres en velours</h3>
-        <p>Fabriqués en matériau PP respectueux de l'environnement, le positionnement dans le design est beau et raisonnable, le design est novateur, finition soignée, bonne qualité et style tendance, de haute qualité.</p>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/ShoeOrg1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/43rLJzG','_blank')">
+        <h4>Organiseur de chaussures</h4>
       </div>
     </div>
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding w3-padding-16 w3-center">
-     <!-- 5 -->
-     <div class="w3-quarter">
-       <div class="container">
-        <img src="Images/Bedroom/cos1.jpg" alt="Cosmetics Oganizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/cos2.jpg" alt="Cosmetics Oganizer" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/gp/product/B09WHJ6BQH/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=11450b3e142f9758b162bb8143ed4b85&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Organisateur de maquillage rotatif à 360°</h3>
-        <p>Grande capacité : il vous aide à économiser de l'espace sur votre commode. Il peut contenir des rouges à lèvres, des fards à paupières, des apprêts, des poudres, des outils de manucure, ou des articles de toilette comme des gommages pour le visage, etc.</p>
+    <!-- 3 & 4 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/Hanger1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3XTRHZc','_blank')">
+        <h4>50 cintres en velours antidérapant</h4>
       </div>
-      <!-- 6 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/eyeMask1.jpg" alt="Eye Mask" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/eyeMask2.jpg" alt="Eye Mask" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/gp/product/B07PRG2CQY/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&amp;psc=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=b5a6424cce4489fdbeb5b93408fe32a0&camp=15121&creative=33064','_blank')">
-          </div>
-        </div>
-        <h3>Masque pour les yeux 100 % occultant ultra léger</h3>
-        <p>Construction ultra légère qui associe la puissance de sommeil de 100 % occultant avec une sensation élégante et à peine là. Bande élastique anti-étirement, revêtue de micro polaire, assure un ajustement parfait pour les années à venir.</p>
-      </div>
-      <!-- 7 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/lamp1.jpg" alt="Nightstand Lamp" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/lamp2.jpg" alt="Nightstand Lamp" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Bedside-Lamp-USB-port-Nightstand/dp/B087CDBKCH/ref=sr_1_15?keywords=bedroom&amp;qid=1689000344&amp;sr=8-15&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=a35bade9a10914b7c99fc59229df56b9&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Lampe de chevet avec port USB à intensité variable</h3>
-        <p>Cette lampe de table à intensité variable à contrôle tactile est de petite taille, ce qui est vraiment parfait pour décorer n'importe où dans votre maison. Une lampe de table USB idéale pour le salon, la chambre, la salle d'étude, la chambre d'enfant, etc.</p>
-      </div>
-      <!-- 8 -->
-      <div class="w3-quarter">
-        <div class="container">
-          <img src="Images/Bedroom/shelf1.jpg" alt="Bedtime Shelf" style="width:250px;height:250px;margin-left:15%;margin-top:7%">
-          <div class="overlay">
-            <img src="Images/Bedroom/shelf2.jpg" alt="Bedtime Shelf" style="width:250px;height:250px;margin-left:15%;margin-top:7%" onclick="window.open('https://www.amazon.ca/Easy-Eco-Life-Accessories-Organizer/dp/B07BPVQZ3H/ref=sr_1_8?crid=26A5PJB22XL3W&amp;keywords=bedroom%252Baccessories&amp;qid=1689001686&amp;sprefix=bedroom%252Ba%252Caps%252C145&amp;sr=8-8&amp;th=1&_encoding=UTF8&tag=canadatopfind-20&linkCode=ur2&linkId=358c89615b37c524f2c55a638575f580&camp=15121&creative=330641','_blank')">
-          </div>
-        </div>
-        <h3>Étagère de chevet - Support mural auto-adhésif</h3>
-        <p>Cette étagère de chevet offre un accès pratique à des objets tels que des téléphones portables, des lunettes, des télécommandes et bien plus encore. Fixée au mur avec une installation autoadhésive grâce à un ruban adhésif double face résistant en quelques secondes.</p>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/connector1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3pWODyN','_blank')">
+        <h4>70 crochets en cascade pour cintres</h4>
       </div>
     </div>
-  
-  <!-- Pagination 
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    <!-- 5 & 6 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/cos3.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3PYhT2T','_blank')">
+        <h4>Organisateur de maquillage rotatif</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/eyeMask1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3Qf8CDV','_blank')">
+        <h4>Masque pour les yeux 100 % occultant</h4>
+      </div>
     </div>
-  </div>
-    -->
+    <!-- 7 & 8 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/shelf1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3PXnGpu','_blank')">
+        <h4>Étagère de chevet auto-adhésif</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Bedroom/lamp1.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3PRKZ3W','_blank')">
+        <h4>Lampe de chevet avec port USB</h4>
+      </div>
+    </div>
+    <!-- 9 & 10 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/bedSheet.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3OdR5u5','_blank')">
+        <h4>Parure de lit haut de gamme</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/gelFoam.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/43rM7hC','_blank')">
+        <h4>Surmatelas en mousse à mémoire de gel</h4>
+      </div>
+    </div>
+    <!-- 11 & 12 -->
+    <div class="w3-col l2 s6" >
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/dresser.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/3DfOQjW','_blank')">
+        <h4>Commode en tissu avec 5 tiroirs</h4>
+      </div>
+      <div class="w3-container" style="cursor: pointer;text-align: center;">
+        <img src="Images/Kitchen/sotageBag.jpg" style="width:125px;height:125px;margin-top:15%" onclick="window.open('https://amzn.to/44HN7iQ','_blank')">
+        <h4>6 grands sacs de rangement pliables</h4>
+      </div>
+    </div>
   </div>
   
   
